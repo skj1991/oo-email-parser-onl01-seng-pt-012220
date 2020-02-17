@@ -4,8 +4,10 @@
 # or whitespace (' ').
 class EmailAddressParser
 
-  def initialize
+  attr_reader :email_addresses
 
+  def initialize(email_addresses)
+    @email_addresses = email_addresses
   end
 
   def parse(csv)
